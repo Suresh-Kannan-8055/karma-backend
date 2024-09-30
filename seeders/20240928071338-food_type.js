@@ -7,17 +7,23 @@ module.exports = {
      await queryInterface.bulkInsert('food_types', [{
       food_type: "Veg",
       emission_value: 1.5,
-      img_url:"/veg"
+      titel:"🥬",
+      color:"#E4FFEE",
+      boder_color:"#FFE0A1",
     },
     {
       food_type: "Non Veg",
       emission_value: 3.3,
-      img_url:"/nonveg"
+      titel:"🍢",
+      color:"#FFF4F3",
+      boder_color:"#EB7E74",
     },
     {
       food_type: "Both",
       emission_value: 2.3,
-      img_url:"/veg-nonveg"
+      titel:"🍗",
+      color:"#FFF4F3",
+      boder_color:"#EB7E74",
     },], {});
     
   },

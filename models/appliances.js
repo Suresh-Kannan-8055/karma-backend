@@ -18,6 +18,18 @@ const appliances = sequelize.define(
       type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
     },
+    title:{
+      type:DataTypes.STRING,
+      allowNull: true,
+    },
+    color:{
+      type:DataTypes.STRING(255),
+      allowNull:true,
+    },
+    boder_color:{
+      type:DataTypes.STRING,
+      allowNull:true,
+    }
   },
   {
     sequelize,

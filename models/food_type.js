@@ -18,8 +18,16 @@ const food_type = sequelize.define(
       type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
     },
-    img_url:{
-      type:DataTypes.TEXT,
+    titel:{
+      type:DataTypes.STRING,
+      allowNull: true,
+    },
+    color:{
+      type:DataTypes.STRING(255),
+      allowNull:true,
+    },
+    boder_color:{
+      type:DataTypes.STRING,
       allowNull:true,
     }
   },

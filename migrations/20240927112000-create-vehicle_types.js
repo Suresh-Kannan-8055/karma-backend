@@ -20,10 +20,6 @@ module.exports = {
         type: DataTypes.DECIMAL(10, 2),
         allowNull: false,
       },
-      img_url:{
-        type: DataTypes.TEXT,
-        allowNull: true,
-      }
     });
   },
   down: async (queryInterface, Sequelize) => {

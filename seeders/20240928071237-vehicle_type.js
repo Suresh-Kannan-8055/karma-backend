@@ -9,17 +9,23 @@ module.exports = {
         {
           vehicle_name: "Bicycle/ Walk",
           emission_value: 0,
-          img_url:"/bicycle"
+          titel:"🚲",
+          color:"#EEF6FF",
+          boder_color:"#1D78EC",
         },
         {
           vehicle_name: "Two Wheeler",
           emission_value: 0.1,
-          img_url:"/bike"
+          titel:"🛵",
+          color:"#FFF4E6",
+          boder_color:"#FFE0A1",
         },
         {
           vehicle_name: "Car",
-          emission_value: 0.220,
-          img_url:"/carimg"
+          emission_value: 0.22,
+          titel:"🚗",
+          color:"#FFF4F3",
+          boder_color:"#EB7E74",
         },
       ],
       {}
