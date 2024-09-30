@@ -3,7 +3,7 @@ const router = express.Router();
 const GetController = require("../controller/getcontroller");
 const PutController = require("../controller/postcontroller");
 
-// router.get("/getcatagory/:category", GetController.);
+router.get("/stepdata", GetController.StepData);
 router.post("/insert",PutController.plantationform)
 
 

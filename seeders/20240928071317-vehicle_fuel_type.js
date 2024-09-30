@@ -9,12 +9,16 @@ module.exports = {
         {
           fuel_type: "Petrol/Diesel",
           emission_value: 0.224,
-          img_url:"/Petorl"
+          titel:"⛽",
+          color:"#FFF4E6",
+          boder_color:"#FFE0A1",
         },
         {
           fuel_type: "Electric Vehicle",
           emission_value: 0.112,
-          img_url:"/Electric"
+          titel:"🔌",
+          color:"#FFF4F3",
+          boder_color:"#EB7E74",
         },
       ],
       {}
