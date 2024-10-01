@@ -24,7 +24,7 @@ const carbon_survey = sequelize.define(
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
-        model: "vehicle_types", // Corrected
+        model: "vehicle_types", 
         key: "id",
       },
       onUpdate: "CASCADE",
@@ -38,7 +38,7 @@ const carbon_survey = sequelize.define(
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
-        model: "vehicle_fuel_types", // Corrected
+        model: "vehicle_fuel_types",
         key: "id",
       },
       onUpdate: "CASCADE",
@@ -52,7 +52,7 @@ const carbon_survey = sequelize.define(
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
-        model: "food_types", // Corrected
+        model: "food_types",
         key: "id",
       },
       onUpdate: "CASCADE",
