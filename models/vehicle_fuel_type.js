@@ -14,10 +14,6 @@ const vehicle_fuel_type = sequelize.define(
       type: DataTypes.STRING(255),
       allowNull: false,
     },
-    emission_value: {
-      type: DataTypes.DECIMAL(10, 2),
-      allowNull: false,
-    },
     titel:{
       type:DataTypes.STRING,
       allowNull: true,

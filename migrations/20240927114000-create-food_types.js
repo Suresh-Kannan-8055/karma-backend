@@ -20,6 +20,7 @@ module.exports = {
         type: DataTypes.DECIMAL(10, 2),
         allowNull: false,
       },
+      
     });
   },
   down: async (queryInterface, Sequelize) => {

@@ -17,7 +17,7 @@ const plantationform = async (req, res) => {
       ],
     });
 
-    res.status(201).json(plantationform);
+    res.status(201).json({ id: plantationform.id });
   } catch (error) {
     console.error("Error inserting plantationform data:", error);
     res.status(500).send("Error inserting plantationform data");
@@ -40,7 +40,7 @@ const CarbonSurvey = async (req, res) => {
       ],
     });
 
-    res.status(201).json(carbonsurvey);
+    res.status(201).json({id :carbonsurvey.id});
   } catch (error) {
     console.error("Error inserting carbonsurvey data:", error);
     res.status(500).send("Error inserting carbonsurvey data");
