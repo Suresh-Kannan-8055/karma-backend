@@ -1,7 +1,7 @@
 const { Sequelize } = require("sequelize");
 const dbConfig = require("./config.json");
 
-const sequelize = new Sequelize("karma_calculator", "root", "root", {
+const sequelize = new Sequelize("karma_calculator", "sabareesh", "sabareesh", {
   dialect: "mysql",
   host: "localhost",
 });

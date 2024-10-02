@@ -1,7 +1,7 @@
 {
   "development": {
-    "username": "root",
-    "password": "root",
+    "username": "sabareesh",
+    "password": "sabareesh",
     "database": "karma_calculator",
     "host": "127.0.0.1",
     "dialect": "mysql",

@@ -19,17 +19,19 @@ const StepData = async (req, res) => {
         {
           type: "card",
           select:"single",
+          name:'vehicles',
           data: VehicleTypeData.map((vehicletype) => ({
             vehicle_id: vehicletype.id,
             name: vehicletype.vehicle_name,
             icon: vehicletype.titel,
             color: vehicletype.color,
             border_color: vehicletype.boder_color,
-            vehicle_type_emission_value: vehicletype.emission_value,
+            emission_value: vehicletype.emission_value,
           })),
         },
         {
           type: "slider",
+          name:'no_of_vehicles',
           data: {
             blockInterval: 2,
             start: 2,
@@ -41,17 +43,19 @@ const StepData = async (req, res) => {
         {
           type: "card",
           select:"single",
+          name:"fuel_type",
           data: VehicleFuelTypeData.map((vehiclefueltype) => ({
             uel_type_id: vehiclefueltype.id,
             name: vehiclefueltype.fuel_type,
             icon: vehiclefueltype.titel,
             color: vehiclefueltype.color,
             border_color: vehiclefueltype.boder_color,
-            vehicle_fuel_type_emission_value: vehiclefueltype.emission_value,
+            emission_value: vehiclefueltype.emission_value,
           })),
         },
         {
           type: "slider",
+          name:"distance",
           data: {
             start: 10,
             end: 250,
@@ -64,13 +68,14 @@ const StepData = async (req, res) => {
         {
           type: "card",
           select:"single",
+          name:"food_type",
           data: FoodItemsData.map((fooditem) => ({
             food_id: fooditem.id,
             name: fooditem.food_type,
             icon: fooditem.titel,
             color: fooditem.color,
             border_color: fooditem.boder_color,
-            food_type_emission_value: fooditem.emission_value,
+            emission_value: fooditem.emission_value,
           })),
         },
       ],
@@ -78,19 +83,21 @@ const StepData = async (req, res) => {
         {
           type: "card",
           select:"multi",
+          name:"appliances",
           data: AppliancesData.map((appliance) => ({
             appliance_id: appliance.id,
             name: appliance.name,
             icon: appliance.title,
             color: appliance.color,
             border_color: appliance.boder_color,
-            appliance_emission_value: appliance.emission_value,
+            emission_value: appliance.emission_value,
           })),
         },
       ],
       [
         {
           type: "slider",
+          name:"power_units",
           data: {
             start: 100,
             end: 1000,
