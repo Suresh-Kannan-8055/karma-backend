@@ -15,6 +15,7 @@ module.exports = {
       survey_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
+        unique:true,
         references: {
           model: "carbon_surveys",
           key: "id",

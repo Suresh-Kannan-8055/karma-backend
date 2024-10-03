@@ -6,6 +6,7 @@ const vehicle_type = require("./vehicle_type");
 const users = require("./users");
 const appliances_multiselect = require("./appliances_multiselect");
 const plantation_form = require("./plantation_form");
+const vehicle_emmision = require("./vehicle_emmision");
 
 users.hasMany(carbon_survey, { foreignKey: "user_id", as: "carbon_survey",});
 carbon_survey.belongsTo(users, { foreignKey: "user_id", as: "users",});
@@ -28,4 +29,11 @@ appliances_multiselect.belongsTo(appliances, { foreignKey: "appliances_id", as: 
 carbon_survey.hasOne(plantation_form, { foreignKey: "survey_id", as: "plantation_form",});
 plantation_form.belongsTo(carbon_survey, { foreignKey: "survey_id", as: "survey",});
 
-module.exports ={carbon_survey,food_type,vehicle_fuel_type,appliances,vehicle_type,users,appliances_multiselect,plantation_form};
+vehicle_fuel_type.hasMany(vehicle_emmision, { foreignKey: "vehicle_fuel_type_id", as: "vehicle_emmision" });
+vehicle_emmision.belongsTo(vehicle_fuel_type, { foreignKey: "vehicle_fuel_type_id", as: "vehicle_fuel_type" });
+
+vehicle_type.hasMany(vehicle_emmision, { foreignKey: "vehicle_type_id", as: "vehicle_emmision" });
+vehicle_emmision.belongsTo(vehicle_type, { foreignKey: "vehicle_type_id", as: "vehicle_type" });
+
+
+module.exports ={carbon_survey,food_type,vehicle_fuel_type,appliances,vehicle_type,users,appliances_multiselect,plantation_form,vehicle_emmision};

@@ -1,8 +1,7 @@
-"use strict";
+'use strict';
 
 const { DataTypes } = require('sequelize');
 
-/** @type {import('sequelize-cli').Migration} */
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.createTable('vehicle_types', {
@@ -14,10 +13,6 @@ module.exports = {
       },
       vehicle_name: {
         type: DataTypes.STRING(255),
-        allowNull: false,
-      },
-      emission_value: {
-        type: DataTypes.DECIMAL(10, 2),
         allowNull: false,
       },
     });
