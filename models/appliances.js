@@ -26,7 +26,7 @@ const appliances = sequelize.define(
       type:DataTypes.STRING(255),
       allowNull:true,
     },
-    boder_color:{
+    border_color:{
       type:DataTypes.STRING,
       allowNull:true,
     }

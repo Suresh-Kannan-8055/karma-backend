@@ -32,8 +32,8 @@ plantation_form.belongsTo(carbon_survey, { foreignKey: "survey_id", as: "survey"
 vehicle_fuel_type.hasMany(vehicle_emmision, { foreignKey: "vehicle_fuel_type_id", as: "vehicle_emmision" });
 vehicle_emmision.belongsTo(vehicle_fuel_type, { foreignKey: "vehicle_fuel_type_id", as: "vehicle_fuel_type" });
 
-vehicle_type.hasMany(vehicle_emmision, { foreignKey: "vehicle_type_id", as: "vehicle_emmision" });
-vehicle_emmision.belongsTo(vehicle_type, { foreignKey: "vehicle_type_id", as: "vehicle_type" });
+vehicle_type.hasMany(vehicle_emmision, { foreignKey: "vehicle_type_id" });
+vehicle_fuel_type.hasMany(vehicle_emmision, { foreignKey: "vehicle_fuel_type_id"});
 
 
 module.exports ={carbon_survey,food_type,vehicle_fuel_type,appliances,vehicle_type,users,appliances_multiselect,plantation_form,vehicle_emmision};

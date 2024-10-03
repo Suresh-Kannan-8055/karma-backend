@@ -14,7 +14,7 @@ const vehicle_type = sequelize.define(
       type: DataTypes.STRING(255),
       allowNull: false,
     },
-    titel:{
+    title:{
       type:DataTypes.STRING,
       allowNull: true,
     },
@@ -22,7 +22,7 @@ const vehicle_type = sequelize.define(
       type:DataTypes.STRING(255),
       allowNull:true,
     },
-    boder_color:{
+    border_color:{
       type:DataTypes.STRING,
       allowNull:true,
     }

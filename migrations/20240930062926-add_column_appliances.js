@@ -15,7 +15,7 @@ module.exports = {
       allowNull: true,
     });
 
-    await queryInterface.addColumn('appliances', 'boder_color', {
+    await queryInterface.addColumn('appliances', 'border_color', {
       type: DataTypes.STRING,
       allowNull: true,
     });
@@ -24,6 +24,6 @@ module.exports = {
   down: async (queryInterface, Sequelize) => {
     await queryInterface.removeColumn("appliances", "title");
     await queryInterface.removeColumn("appliances", "color");
-    await queryInterface.removeColumn("appliances", "boder_color");
+    await queryInterface.removeColumn("appliances", "border_color");
   },
 };

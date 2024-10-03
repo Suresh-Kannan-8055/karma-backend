@@ -25,8 +25,11 @@ app.get("/", (req, res) => {
   res.send("Karma Calculator");
 });
 
-const router = require("./src/routes/router");
-app.use("/api", router);
+const routes = require("./src/routes/router");
+const vehicleRoutes = require('./src/routes/vehicle_routes')
+const foodRoutes = require('./src/routes/food_routes')
+const appliancesRoutes = require('./src/routes/appliances_routes')
+app.use("/api", routes,vehicleRoutes,foodRoutes,appliancesRoutes);
 
 
 const PORT = process.env.PORT || 8000;
